@@ -23,7 +23,7 @@ async function test_case() {
   await driver.findElement(By.name("login")).sendKeys("cdiazgranados");
   await driver
     .findElement(By.name("password"))
-    .sendKeys("*********", Key.RETURN);
+    .sendKeys("********", Key.RETURN);
 
   if (
     await driver
