@@ -6,7 +6,9 @@ async function test_case() {
 
   await driver.get("https://google.com");
 
-  await driver.findElement(By.name("q")).sendKeys("Today's news", Key.RETURN);
+  await driver
+    .findElement(By.name("q"))
+    .sendKeys("Do a barrel roll", Key.RETURN);
 
   setInterval(function () {
     driver.quit();
